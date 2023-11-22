@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/410323d20b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lib/style.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
@@ -27,15 +27,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 
     <!-- Other scripts and stylesheets -->
-    <script src="resp.js"></script>
+    <script src="lib/resp.js"></script>
+    <script src="lib/pages.js"></script>
 
 </head>
 <body>
     <!-- Nav -->
-    <nav class="navbar bg-body-tertiary"> 
+    <nav id="nav" class="navbar bg-body-tertiary"> 
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="ab.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top fw-bold">
+            <img src="img/ab.png" alt="Logo" width="25" height="25" class="d-inline-block align-text-top fw-bold">
             Synochrina
           </a>
           <form class="d-flex" role="search">
@@ -45,10 +46,152 @@
         </div>
       </nav>
 
-
     <!-- Mobile Carousel -->
 
-    <!-- Card -->
-    
+    <div class="circle-box">
+      <p>If you enjoy the website, please consider donating or sharing this to your friends so we can keep the site going. Thank you!</p>
+    </div>
+
+
+    <!-- Content Navbar -->
+    <div class="container-fluid mt-4">
+      <div class="row">
+          <div class="col-md-8 left-container">
+              <div class="content-navbar recently-updated">
+                  <h1>Recently Updated</h1>
+                  <div class="page-numbers">
+                      <!-- Page numbers for Recently Updated will be dynamically generated here -->
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 right-container">
+              <div class="content-navbar top-anime">
+                  <h1>Top Anime</h1>
+                  <div class="page-numbers">
+                      <!-- Page numbers for Top Anime will be dynamically generated here -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Content -->
+    <div class="container-fluid mt-4">
+      <div class="row">
+          <!-- Recent Anime (Left Column) -->
+          <div class="col-md-8">
+              <!-- Add your recent anime content here -->
+              <!-- Example Cards: -->
+              <div class="row">
+                  <div class="col-md-3 mb-3">
+                      <div class="card h-100">
+                          <img src="img/a.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                          <div class="card-body">
+                              <h5 class="card-title">Witch on the Holy...</h5>
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <div class="card h-100">
+                          <img src="img/b.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                          <div class="card-body">
+                              <h5 class="card-title">Another Anime Title</h5>
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <div class="card h-100">
+                          <img src="img/e.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                          <div class="card-body">
+                              <h5 class="card-title">Third Anime Title</h5>
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                      <div class="card h-100">
+                          <img src="img/d.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                          <div class="card-body">
+                              <h5 class="card-title">Fourth Anime Title</h5>
+                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-3">
+                    <div class="card h-100">
+                        <img src="img/d.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Fourth Anime Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <div class="card h-100">
+                      <img src="img/e.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                      <div class="card-body">
+                          <h5 class="card-title">Third Anime Title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                  <div class="card h-100">
+                      <img src="img/d.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                      <div class="card-body">
+                          <h5 class="card-title">Fourth Anime Title</h5>
+                          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <div class="card h-100">
+                    <img src="img/d.png" class="card-img-top card-img-custom" alt="Recent Anime Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Fourth Anime Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+                    </div>
+                </div>
+            </div>
+
+                  <!-- Add more cards as needed -->
+              </div>
+          </div>
+
+          <!-- Top Anime (Right Column) -->
+          <div class="col-md-4">
+              <!-- Add your top anime content here -->
+              <!-- Example Cards: -->
+              <div class="card mb-3">
+                  <img src="img/a.png" class="card-img-top card-img-custom" alt="Top Anime Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Top Anime Title</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                  </div>
+              </div>
+
+              <div class="card mb-3">
+                  <img src="img/b.png" class="card-img-top card-img-custom" alt="Top Anime Image">
+                  <div class="card-body">
+                      <h5 class="card-title">Another Top Anime</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                  </div>
+              </div>
+
+              <!-- Add more cards as needed -->
+          </div>
+      </div>
+  </div>
+  
 </body>
 </html>
